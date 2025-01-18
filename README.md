@@ -12,12 +12,10 @@
 ```
 uvicorn main:app --reload
 ```
-
 ### Start the Celery worker
 ```
 celery -A celeryconfig.celery_app worker --loglevel=info
 ```
-
 ### Start the Celery beat
 ```
 celery -A celeryconfig.celery_app beat --loglevel=info
