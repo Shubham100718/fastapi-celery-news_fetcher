@@ -1,6 +1,6 @@
 # FASTAPI CELERY NEWS FETCHER
 
-What does this project do?
+## What does this project do?
  * Use the News API (https://newsapi.org/) to fetch news data.
  * Then a periodic task that automatically runs every minute using Celery and Celery Beat.
  * Then this task stores the results in the MySQL database.
