@@ -6,15 +6,19 @@ What does this project do?
  * Then this task stores the results in the MySQL database.
 
 
-# How to start the application?
+## How to start the application?
 
-## Run the FastAPI App (Optional)
+### Run the FastAPI App (Optional)
+```
 uvicorn main:app --reload
+```
 
-## Start the Celery worker
+### Start the Celery worker
+```
 celery -A celeryconfig.celery_app worker --loglevel=info
+```
 
-## Start the Celery beat
+### Start the Celery beat
 ```
 celery -A celeryconfig.celery_app beat --loglevel=info
 ```
