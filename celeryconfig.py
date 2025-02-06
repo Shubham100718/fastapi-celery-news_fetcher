@@ -16,6 +16,8 @@ celery_app.conf.update(
     result_serializer="json",
     timezone="UTC",
     enable_utc=True,
+    task_always_eager=False,       # Enables eager mode
+    task_eager_propagates=False,   # Ensures exceptions are propagated
 )
 
 celery_app = Celery(
